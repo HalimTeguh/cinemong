@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>Cinemong | Sign In</title>
+        <title>Cinemong | Sign Up</title>
         <style type="text/tailwindcss">
             * {
                 /* border: red 1px solid; */
@@ -17,29 +17,34 @@
 
         <table>
             <tr >
-                <td><img  class="max-h-screen" src="/resources/img/img_login.png" alt=""></td>
+                <td><img  class="" src="/resources/img/img_register.png" alt="" style="max-width: 105%;"></td>
                 <td class="text-align: center; ">
-                    <div class="mx-40 h-14 -mt-48 rounded-3xl border-4 border-cyan-300 text-cyan-300 ">
-                        <h1 class="text-3xl  text-center m-1"><span class="display: inline-block; vertical-align: middle; line-height: normal;">Sign In</span></h1>
+                    <div class="mx-40 h-14 -mt-72 rounded-3xl border-4 border-cyan-300 text-cyan-300 ">
+                        <h1 class="text-3xl  text-center m-1"><span class="display: inline-block; vertical-align: middle; line-height: normal;">Sign Up</span></h1>
                     </div>
                     <div class="mx-40 h-14 mt-10">
                         <form action="" method="post">
                             <label class="text-xl text-white" for="username">Username</label><br>
                             <input class="text-xl mb-2 px-3 py-1 text-white w-full rounded-lg border-4 border-cyan-300 bg-transparent" type="text" name="username" id="username" placeholder="your username" required>
 
+                            <label class="text-xl text-white" for="name">Full Name</label><br>
+                            <input class="text-xl mb-2 px-3 py-1 text-white w-full rounded-lg border-4 border-cyan-300 bg-transparent" type="text" name="name" id="name" placeholder="your name" required>
+
+                            <label class="text-xl text-white" for="birth">Birth Date</label><br>
+                            <input class="text-xl mb-2 px-3 py-1 text-white w-full rounded-lg border-4 border-cyan-300 bg-transparent" type="date" name="birth" id="birth" placeholder="your birth date" style="color-scheme: dark;" required>
+                            
                             <label class="text-xl text-white" for="password">Password</label><br>
                             <input class="text-xl mb-2 px-3 py-1 text-white w-full rounded-lg border-4 border-cyan-300 bg-transparent" type="password" name="password" id="password" placeholder="your password" style="color-scheme: dark;" required>
 
-                            <div class="text-white text-end underline">
-                                <a href="">Forgot Password</a>
-                            </div>
+                            <label class="text-xl text-white" for="password">Confirm Password</label><br>
+                            <input class="text-xl mb-2 px-3 py-1 text-white w-full rounded-lg border-4 border-cyan-300 bg-transparent" type="password" name="password" id="password" placeholder="Confirm password" style="color-scheme: dark;" required>
 
                             <div class="text-xl font-bold w-36 center h-8 my-5 m-auto bg-cyan-300 text-center rounded-md" style=" color: #001C30;">
-                                <input class="my-auto " type="submit" value="Login">
+                                <input class="my-auto " type="submit" value="Register">
                             </div>
                             <hr>
                             <div class="text-center p-2 text-white">
-                                <h3 class="text-lg">Haven't an account?  <a href="register.html" class="text-cyan-300 underline pl-1"> Sign up</a></h3>
+                                <h3 class="text-lg">Already have an account?  <a href="login.html" class="text-cyan-300 underline pl-1"> Sign in</a></h3>
                             </div>
                         </form>
                     </div>
