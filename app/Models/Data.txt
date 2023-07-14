@@ -1,0 +1,5 @@
+Bioscop
+
+INSERT INTO `bioscops` (`id`, `name`, `address`) VALUES (NULL, 'Transmart MX Mall XXI', 'Jl. Veteran, Ketawanggede, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145'), (NULL, 'Mandala 21', 'Plaza Malang, Jl. Agus Salim No.28, Sukoharjo, Kec. Klojen, Kota Malang, Jawa Timur 65118'), (NULL, 'Araya XXI', 'Komp. Araya Bussines Center, lantai 2, Jl. Blimbing Indah Megah No.2, Purwodadi, Kec. Blimbing, Kota Malang, Jawa Timur 65126'), (NULL, 'Cinépolis Malang Town Square', 'Jl. Veteran No.2, Penanggungan, Klojen, Malang City, East Java 65111'), (NULL, 'Dieng 21', 'Dieng Plaza Lantai 3, Jl. Raya Langsep No. 2, Pisang Candi, Malang, Malang City, East Java 65147'), (NULL, 'Movimax Sarinah Malang', 'Sarinah Plaza, Jl. Jenderal Basuki Rahmat No.2A, Kiduldalem, Kec. Klojen, Kota Malang, Jawa Timur 65119'), (NULL, 'Movimax Malang City Point', '	Jl. Terusan Dieng No.31, Pisang Candi, Kec. Sukun, Kota Malang, Jawa Timur 65146'), (NULL, 'Movimax Mt. Haryono', 'Jl. MT. Haryono No.193, Dinoyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144');
+
+
