@@ -17,7 +17,7 @@
 
         <table>
             <tr>
-                <td><img  class="mr-36 h-screen" src="/resources/img/img_login.png" alt=""></td>
+                <td><img  class="mr-36 h-screen" src="{{ mix('/resources/img/img_login.png') }}" alt=""></td>
                 <td class="align-middle px-32">
                     <div class="mx-auto h-14 -mt-48 rounded-3xl border-4 border-cyan-300 text-cyan-300 ">
                         <h1 class="text-3xl  text-center m-1"><span class="display: inline-block; vertical-align: middle; line-height: normal;">Sign In</span></h1>
@@ -39,7 +39,7 @@
                             </div>
                             <hr>
                             <div class="text-center p-2 text-white">
-                                <h3 class="text-lg">Haven't an account?  <a href="register.html" class="text-cyan-300 underline pl-1"> Sign up</a></h3>
+                                <h3 class="text-lg">Haven't an account?  <a href="/signin" class="text-cyan-300 underline pl-1"> Sign up</a></h3>
                             </div>
                         </form>
                     </div>

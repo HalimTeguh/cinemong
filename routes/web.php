@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Authorize;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\TicketController;
@@ -20,6 +21,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/signin', [Authorize::class, 'signin']);
+Route::post('/signin', [Authorize::class, 'createUser']);
+
+Route::get('/login', [Authorize::class, 'signup']);
+
 
 Route::get('/dashboard', [Controller::class, 'index']);
 
