@@ -1,3 +1,6 @@
+@extends('/layout.main')
+
+@section('content')
 <div class="col-12">
   <div class="card">
     <div class="card-body">
@@ -34,7 +37,7 @@
             <td>Halim123</td>
             <td>12/09/2003</td>
             <td>
-              <img class="w-36 mx-auto my-2 rounded-md" src="/resources/img/poster/pt_insidious_the_red_door.png" alt="">
+              <img class="w-36 mx-auto my-2 rounded-md" src="{{ mix('/resources/img/poster/pt_insidious_the_red_door.png') }}" alt="">
             </td>
             <td>
               <br>
@@ -48,7 +51,7 @@
             <td>Halim123</td>
             <td>12/09/2003</td>
             <td>
-              <img class="w-36 mx-auto my-2 rounded-md" src="{{ mix('../img/pt_insidious_the_red_door.png') }}" alt="">
+              <img class="w-36 mx-auto my-2 rounded-md" src="{{ mix('/resources/img/poster/pt_insidious_the_red_door.png') }}" alt="">
             </td>
             <td>
               <br>
@@ -62,7 +65,7 @@
             <td>Halim123</td>
             <td>12/09/2003</td>
             <td >
-              <img class="w-36 mx-auto my-2 rounded-md" src="{{ mix('../img/pt_insidious_the_red_door.png') }}" alt="">
+              <img class="w-36 mx-auto my-2 rounded-md" src="{{ mix('/resources/img/poster/pt_insidious_the_red_door.png') }}" alt="">
             </td>
             <td>
               <br>

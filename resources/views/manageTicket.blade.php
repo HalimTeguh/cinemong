@@ -1,8 +1,12 @@
+@extends('/layout.main')
+
+@section('content')
+
 <div class="col-12">
   <div class="card">
     <div class="card-body">
       <div class="mb-5">
-        <h2 class="card-title text-4xl ml-3">Manage Movie</h2>
+        <h2 class="card-title text-4xl ml-3">Manage Ticket</h2>
       </div>
       <div class="mx-10 mb-10">
         <table class="w-full">
@@ -22,20 +26,20 @@
         <thead class="bg-cyan-300 text-black font-semibold py-3 pt-10 text-xl text-center">
           <td class="py-2 rounded-s-2xl">No</td>
           <td>Title</td>
-          <td>Genre</td>
-          <td>Rating</td>
-          <td>Poster</td>
+          <td>Price</td>
+          <td>Amount</td>
+          <td>Start</td>
+          <td>End</td>
           <td class="rounded-e-2xl">Action</td>
         </thead>
         <tbody class="text-center">
           <tr class="border-b-2">
-            <td class="py-4">1</td>
+            <td>1</td>
             <td>Halim</td>
             <td>Halim123</td>
+            <td>Rp 35.000,-</td>
             <td>12/09/2003</td>
-            <td>
-              <img class="w-36 mx-auto my-2 rounded-md" src="/resources/img/poster/pt_insidious_the_red_door.png" alt="">
-            </td>
+            <td>12/09/2003</td>
             <td>
               <br>
               <a class="py-2 px-4 border-2 rounded-2xl border-green-500 hover:bg-green-500 hover:text-white" href="">Edit</a><br><br>
@@ -43,13 +47,12 @@
             </td>
           </tr>
           <tr class="border-b-2">
-            <td class="py-4">2</td>
+            <td>2</td>
             <td>Halim</td>
             <td>Halim123</td>
+            <td>Rp 35.000,-</td>
             <td>12/09/2003</td>
-            <td>
-              <img class="w-36 mx-auto my-2 rounded-md" src="{{ mix('../img/pt_insidious_the_red_door.png') }}" alt="">
-            </td>
+            <td>12/09/2003</td>
             <td>
               <br>
               <a class="py-2 px-4 border-2 rounded-2xl border-green-500 hover:bg-green-500 hover:text-white" href="">Edit</a><br><br>
@@ -57,13 +60,12 @@
             </td>
           </tr>
           <tr class="border-b-2">
-            <td class="py-4">3</td>
+            <td>3</td>
             <td>Halim</td>
             <td>Halim123</td>
+            <td>Rp 35.000,-</td>
             <td>12/09/2003</td>
-            <td >
-              <img class="w-36 mx-auto my-2 rounded-md" src="{{ mix('../img/pt_insidious_the_red_door.png') }}" alt="">
-            </td>
+            <td>12/09/2003</td>
             <td>
               <br>
               <a class="py-2 px-4 border-2 rounded-2xl border-green-500 hover:bg-green-500 hover:text-white" href="">Edit</a><br><br>
@@ -72,9 +74,8 @@
           </tr>
         </tbody>
       </table>
-      
-      
     </div>
   </div>
 </div>
+    
 @endsection

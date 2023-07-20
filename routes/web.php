@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\MovieController;
+use App\Http\Controllers\TicketController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +18,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', [Controller::class, 'index']);
+
+Route::get('/dashboard/manageUser', [UserController::class, 'index']);
+
+Route::get('/dashboard/manageMovie', [MovieController::class, 'index']);
+
+Route::get('/dashboard/manageTicket', [TicketController::class, 'index']);
+
+
+
+Route::get('/dasboard/manageUser', function () {
     return view('welcome');
 });

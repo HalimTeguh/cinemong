@@ -21,6 +21,7 @@ return new class extends Migration
             $table->date('birth_date');
             $table->integer('balance');
             $table->string('profile_img');
+            $table->integer('level');
             $table->timestamps();
         });
     }

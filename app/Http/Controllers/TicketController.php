@@ -8,21 +8,14 @@ use App\Http\Requests\UpdateTicketRequest;
 
 class TicketController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        return view('manageTicket',
+        [
+         'title' => 'maangeTicket'   
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         //
@@ -32,7 +25,6 @@ class TicketController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \App\Http\Requests\StoreTicketRequest  $request
-     * @return \Illuminate\Http\Response
      */
     public function store(StoreTicketRequest $request)
     {
@@ -43,7 +35,6 @@ class TicketController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Ticket  $ticket
-     * @return \Illuminate\Http\Response
      */
     public function show(Ticket $ticket)
     {
@@ -54,7 +45,6 @@ class TicketController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Ticket  $ticket
-     * @return \Illuminate\Http\Response
      */
     public function edit(Ticket $ticket)
     {
@@ -66,7 +56,6 @@ class TicketController extends Controller
      *
      * @param  \App\Http\Requests\UpdateTicketRequest  $request
      * @param  \App\Models\Ticket  $ticket
-     * @return \Illuminate\Http\Response
      */
     public function update(UpdateTicketRequest $request, Ticket $ticket)
     {
@@ -77,7 +66,6 @@ class TicketController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Ticket  $ticket
-     * @return \Illuminate\Http\Response
      */
     public function destroy(Ticket $ticket)
     {
