@@ -23,9 +23,10 @@ Route::get('/', function () {
 });
 
 Route::get('/signin', [Authorize::class, 'signin']);
-Route::post('/signin', [Authorize::class, 'createUser']);
+Route::post('/signin', [Authorize::class, 'authenticate']);
 
-Route::get('/login', [Authorize::class, 'signup']);
+Route::get('/signup', [Authorize::class, 'signup']);
+Route::post('/signup', [Authorize::class, 'createUser']);
 
 
 Route::get('/dashboard', [Controller::class, 'index']);
