@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('password');
             $table->date('birth');
             $table->integer('balance');
-            $table->string('profile_img');
+            $table->string('profile_img')->default('null');
             $table->integer('level');
             $table->timestamps();
         });
